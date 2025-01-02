@@ -1,0 +1,20 @@
+{
+  "name": "portal-playwright-test-env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/dotenv": "^8.2.3",
+    "@types/node": "^20.10.3",
+    "typescript": "^5.3.2"
+  },
+  "scripts": {
+    "test:playwright": "playwright test --reporter=html",
+    "test:playwright:watch": "playwright test --watch",
+    "test:generate-report": "playwright show-report"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}

@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  playwright:
+    build: .
+    volumes:
+      - ../:/app # Mount the local repository
+    ports:
+      - "8080:8080" # Serve reports on localhost
+    working_dir: /app
+    environment:
+      - PLAYWRIGHT_REPORT_PORT=8080

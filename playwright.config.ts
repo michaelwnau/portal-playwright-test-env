@@ -5,6 +5,7 @@ const config: PlaywrightTestConfig = {
   timeout: 60000,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
+  fullyParallel: true,
   reporter: 'html',
   use: {
     baseURL: process.env.BASE_URL ?? 'http://localhost:3001',

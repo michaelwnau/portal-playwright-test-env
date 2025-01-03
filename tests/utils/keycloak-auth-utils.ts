@@ -15,7 +15,7 @@ const mockJwtPayload = {
   azp: process.env.KEYCLOAK_CLIENT_ID,
   session_state: 'mock-session',
   acr: '1',
-  'allowed-origins': ['http://localhost:3000'],
+  'allowed-origins': ['http://localhost:3001'],
   realm_access: { roles: ['default-roles-baby-yoda'] },
   resource_access: {},
   scope: 'openid profile email',

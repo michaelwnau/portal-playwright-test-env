@@ -8,7 +8,7 @@ const config: PlaywrightTestConfig = {
   fullyParallel: true,
   reporter: 'html',
   use: {
-    baseURL: process.env.BASE_URL ?? 'http://localhost:3000',
+    baseURL: process.env.BASE_URL ?? 'http://localhost:3001',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',

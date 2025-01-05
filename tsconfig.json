@@ -16,6 +16,6 @@
     "tests/utils/**/*.ts", 
     "playwright.config.ts",
     "tests/app/base-config.test.ts"
-  ],
+, "global-setup.ts", "tests-examples/example.spec.ts"  ],
   "exclude": ["node_modules"]
 }

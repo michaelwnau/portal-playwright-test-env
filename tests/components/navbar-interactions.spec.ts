@@ -1,12 +1,5 @@
-import { test as base, expect } from '@playwright/test';
-import { setupAuth } from '../utils/keycloak-auth-utils';
-
-const test = base.extend({
-  page: async ({ page }, use) => {
-    await setupAuth(page);
-    await use(page);
-  },
-});
+// tests/components/navbar-interactions.spec.ts
+import { test, expect } from '@playwright/test';
 
 test('navbar interactions', async ({ page }) => {
   // Navigate and wait for app to be fully loaded

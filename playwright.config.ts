@@ -1,13 +1,21 @@
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
+  globalSetup: require.resolve('./global-setup'),
   testDir: './tests',
   timeout: 60000,
-  retries: process.env.CI ? 2 : 0,
+  retries: 2,
+  // retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
   fullyParallel: true,
-  reporter: 'html',
+  reporter: [
+    ['html'],
+    ['list'],
+  ],
   use: {
+    // Set headless based on environment variable
+    headless: !process.env.HEADED,
+    storageState: 'auth.json',
     baseURL: process.env.BASE_URL ?? 'http://localhost:3001',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',

@@ -11,6 +11,7 @@ const config: PlaywrightTestConfig = {
   reporter: [
     ['html'],
     ['list'],
+    ['allure-playwright'],
   ],
   use: {
     // Set headless based on environment variable

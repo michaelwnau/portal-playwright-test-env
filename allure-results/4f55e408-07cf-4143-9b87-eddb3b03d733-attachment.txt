@@ -1,0 +1,13 @@
+Making request to: http://localhost:3000/api/articles?slug=test-article
+Response status: 500
+Response headers: {
+  'access-control-allow-headers': 'Content-Type, Authorization',
+  'access-control-allow-methods': 'GET, POST, PUT, DELETE, OPTIONS',
+  vary: 'RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch',
+  'content-type': 'application/json',
+  date: 'Tue, 07 Jan 2025 19:44:16 GMT',
+  connection: 'keep-alive',
+  'keep-alive': 'timeout=5',
+  'transfer-encoding': 'chunked'
+}
+Response body: {"error":"Failed to fetch the article page data"}

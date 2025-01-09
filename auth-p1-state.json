@@ -1,0 +1,35 @@
+{
+  "cookies": [
+    {
+      "name": "auth_token",
+      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYzNzA0NDQsImlhdCI6MTczNjM2MzI0NCwiYXV0aF90aW1lIjoxNzM2MzYzMjQ0LCJqdGkiOiJtb2NrLWp3dC1pZCIsImlzcyI6Imh0dHBzOi8vbG9naW4uZHNvLm1pbC9hdXRoL3JlYWxtcy9iYWJ5LXlvZGEiLCJhdWQiOiJndWFyZGlhbi1vbmUtcG9ydGFsIiwic3ViIjoidGVzdC1zdWJqZWN0LWlkIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiZ3VhcmRpYW4tb25lLXBvcnRhbCIsInNlc3Npb25fc3RhdGUiOiJtb2NrLXNlc3Npb24iLCJhY3IiOiIxIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMSJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1iYWJ5LXlvZGEiXX0sInJlc291cmNlX2FjY2VzcyI6e30sInNjb3BlIjoib3BlbmlkIHByb2ZpbGUgZW1haWwiLCJzaWQiOiJtb2NrLXNlc3Npb24taWQiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwibmFtZSI6IlRlc3QgVXNlciIsInByZWZlcnJlZF91c2VybmFtZSI6InRlc3QudXNlciIsImdpdmVuX25hbWUiOiJUZXN0IiwiZmFtaWx5X25hbWUiOiJVc2VyIiwiZW1haWwiOiJ0ZXN0LnVzZXJAc3BhY2Vmb3JjZS5taWwiLCJ1c2VyY2VydGlmaWNhdGUiOiIxMjM0NTY3ODkwQG1pbCJ9.mock_signature",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "email",
+      "value": "test.user@spaceforce.mil",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    },
+    {
+      "name": "userId",
+      "value": "1234567890@mil",
+      "domain": "localhost",
+      "path": "/",
+      "expires": -1,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "Lax"
+    }
+  ],
+  "origins": []
+}

@@ -7,6 +7,8 @@
     "@playwright/test": "^1.49.1",
     "@types/dotenv": "^8.2.3",
     "@types/node": "^20.10.3",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/pngjs": "^6.0.5",
     "allure-js-commons": "^3.0.8",
     "allure-playwright": "^3.0.8",
     "cross-env": "^7.0.3",
@@ -17,9 +19,14 @@
     "test:playwright": "playwright test --reporter=html",
     "test:playwright:headed": "cross-env HEADED=1 playwright test --reporter=html",
     "test:playwright:debug": "playwright test --debug",
-    "test:generate-report": "playwright show-report"
+    "test:generate-report": "playwright show-report",
+    "test:visual": "playwright test --config=visual.config.ts",
+    "test:visual:update": "cross-env UPDATE_GOLDEN_IMAGES=true playwright test --config=visual.config.ts",
+    "test:visual:generate": "yarn test:visual:update",
+    "test:visual:report": "playwright show-report \"./playwright-report/visual-regression/\""
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.4.7"
   }
 }

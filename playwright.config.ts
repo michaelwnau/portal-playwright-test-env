@@ -47,6 +47,16 @@ const config: PlaywrightTestConfig = {
       },
       testDir: './tests/app',
     },
+    {
+      name: 'visual-regression',
+      testDir: './tests/visual',
+      use: {
+        baseURL: process.env.LIVE_URL ?? 'https://my.spaceforce.mil',
+        screenshot: 'on',
+        video: 'retain-on-failure',
+        viewport: { width: 1280, height: 720 },
+      },
+    }
   ],
 };
 
